@@ -132,6 +132,7 @@ insert into Transactions values
 ------TASK 3------
 --1.Write a SQL query to Find the average account balance for all customers
    select avg(balance) as average_balance from Accounts
+   group by customer_id
 
 --2.Write a SQL query to Retrieve the top 10 highest account balances
    select top 10 account_id,balance from Accounts
